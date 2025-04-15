@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Momento Nixie Control</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Momento Nixie Control</h1>
+
+    <div class="form-group">
+      <div class="value-input-group">
+        <input type="number" id="value_0" value="0" name="value_0" min="0" max="9" placeholder="0-9" />
+        <input type="number" id="value_1" value="0" name="value_1" min="0" max="9" placeholder="0-9" />
+        <input type="number" id="value_2" value="0" name="value_2" min="0" max="9" placeholder="0-9" />
+        <input type="number" id="value_3" value="0" name="value_3" min="0" max="9" placeholder="0-9" />
+        <input type="number" id="value_4" value="0" name="value_4" min="0" max="9" placeholder="0-9" />
+        <input type="number" id="value_5" value="0" name="value_5" min="0" max="9" placeholder="0-9" />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="color">Color:</label>
+      <select id="color" name="color">
+        <option value="0">None</option>
+        <option value="1">Blue</option>
+        <option value="2">Green</option>
+        <option value="3">Red</option>
+        <option value="4">White</option>
+        <option value="5">Purple</option>
+        <option value="6">Yellow</option>
+        <option value="7">Teal</option>
+      </select>
+    </div>
+
+    <button id="publishBtn">Publish</button>
+
+    <div id="status" class="status" style="display: none;"></div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>
